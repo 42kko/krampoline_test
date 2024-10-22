@@ -18,4 +18,4 @@
  ## 컨테이너 시작 시 실행될 명령어
  #CMD ["npm", "start"]
 
-FROM krmp-d2hub-idock.9rum.cc/goorm/mysql
+FROM krmp-d2hub-idock.9rum.cc/goorm/mariadb:10.6.12
