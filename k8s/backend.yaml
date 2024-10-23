@@ -39,21 +39,3 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
----
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
-metadata:
-  annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
-  labels:
-    app.kubernetes.io/managed-by: kargocd
-  name: backigress
-spec:
-  rules:
-    - http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              serviceName: back-service
-              servicePort: 80
