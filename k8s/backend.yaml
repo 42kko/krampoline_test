@@ -47,7 +47,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   labels:
     app.kubernetes.io/managed-by: kargocd
-  name: backIgress
+  name: backigress
 spec:
   rules:
     - http:
