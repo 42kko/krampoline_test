@@ -1,13 +1,10 @@
 namespace: default
 resources:
-  - mariadb.yaml
+  - mysql.yaml
   - backend.yaml
 
 #아래 설정파일들이 무엇인지 알아볼것.
 configMapGenerator:
-  - name: nginx
-    files:
-      - configs/default.conf
   - name: init-db
     files:
       - configs/init.sql
