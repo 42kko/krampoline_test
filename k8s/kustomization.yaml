@@ -5,7 +5,7 @@ resources:
   - ingress.yaml
 
 #아래 설정파일들이 무엇인지 알아볼것.
-# configMapGenerator:
-#   - name: init-db
-#     files:
-#       - configs/init.sql
+configMapGenerator:
+  - name: init-db
+    files:
+      - configs/init.sql
