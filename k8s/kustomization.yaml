@@ -2,7 +2,7 @@ namespace: default
 resources:
   # - mysql.yaml
   - backend.yaml
-   - ingress.yaml
+  - ingress.yaml
 
 #아래 설정파일들이 무엇인지 알아볼것.
 # configMapGenerator:
