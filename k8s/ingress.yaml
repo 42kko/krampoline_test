@@ -14,8 +14,15 @@ spec:
           - path: /
             pathType: Prefix
             backend:
+              serviceName: frontend
+              servicePort: 3000
+              
+          - path: /docs
+            pathType: Prefix
+            backend:
               serviceName: backend
               servicePort: 8080
+      
           - path: /api
             pathType: Prefix
             backend:
