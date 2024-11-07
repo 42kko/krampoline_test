@@ -23,7 +23,7 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               value: root
             - name: MYSQL_DATABASE
-              value: dodocs
+              value: dododocs
             - name: MYSQL_DISABLE_UPGRADE_BACKUP
               value: '1'
           volumeMounts:
