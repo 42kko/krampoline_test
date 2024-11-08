@@ -21,7 +21,7 @@ spec:
               value: Asia/Seoul
           envFrom:
           - configMapRef:
-              name: test-config
+              name: testserver-env
               optional: false
           resources:
             requests:
