@@ -21,7 +21,7 @@ spec:
               value: Asia/Seoul
           envFrom:
           - configMapRef:
-            name: test-config
+              name: test-config
           resources:
             requests:
               memory: 1Gi
