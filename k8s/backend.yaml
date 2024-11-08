@@ -22,6 +22,7 @@ spec:
           envFrom:
           - configMapRef:
               name: test-config
+              optional: true
           resources:
             requests:
               memory: 1Gi
