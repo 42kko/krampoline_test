@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_02c2f503ed33
+          image: hyesushim/dododocs-fe:latest
 ---
 apiVersion: v1
 kind: Service
