@@ -23,7 +23,7 @@ spec:
             - name: REACT_APP_API_BASE_URL
               valueFrom:
                 configMapKeyRef:
-                  name: testserver-env
+                  name: fe-env
                   key: REACT_APP_API_BASE_URL
 ---
 apiVersion: v1
