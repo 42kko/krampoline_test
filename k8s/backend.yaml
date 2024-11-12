@@ -19,6 +19,10 @@ spec:
           env:
             - name: TZ
               value: Asia/Seoul
+            - name: HTTP_PROXY
+              value: http://krmp-proxy.9rum.cc:3128
+            - name: HTTPS_PROXY
+              value: http://krmp-proxy.9rum.cc:3128
           envFrom:
           - configMapRef:
               name: testserver-env
