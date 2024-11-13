@@ -23,7 +23,9 @@ spec:
             - name: REACT_APP_API_BASE_URL
               valueFrom:
                 configMapKeyRef:
-                  name: fe-env
+                  #name: fe-env
+                  #key: REACT_APP_API_BASE_URL
+                  name: fe-deploy
                   key: REACT_APP_API_BASE_URL
 ---
 apiVersion: v1
