@@ -25,7 +25,8 @@ spec:
               value: http://krmp-proxy.9rum.cc:3128
           envFrom:
           - configMapRef:
-              name: testserver-env
+              #name: testserver-env
+              name: env-be-deploy
               optional: false
           resources:
             requests:
