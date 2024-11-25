@@ -20,6 +20,10 @@ spec:
           - configMapRef:
               name: env-ai
               optional: false
+          readinessProbe:
+            httpGet:
+              path: /ping
+              port: 8000
 ---
 apiVersion: v1
 kind: Service
