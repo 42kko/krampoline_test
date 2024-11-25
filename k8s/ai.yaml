@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai
+  labels:
+    app: ai
+spec:
+  selector:
+    matchLabels:
+      app: ai
+  template:
+    metadata:
+      labels:
+        app: ai
+    spec:
+      containers:
+        - name: ai
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_2ce2aff97027
+          envFrom:
+          - configMapRef:
+              name: env-ai
+              optional: false
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai
+spec:
+  selector:
+    app: ai
+  ports:
+    - port: 8000
+      targetPort: 8000
